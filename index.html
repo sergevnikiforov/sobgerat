@@ -6,53 +6,59 @@
     <meta name="description" content="Cлужба, охрана, безопасность">
     <meta charset="utf-8">
     <title>ООО "СОБГЕРАТ"</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    <link href="style/reset.css" rel="stylesheet" type="text/css">
     <link href="style/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <div id="wrap">
-        <div id="header">
-            <div id="logo">
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">
                 <a href="#"><img src="images/logo.png" height="300" width="300" alt="Логотип"></a>
             </div>
-            <div id="top">
-                <p class="first">ООО "СОБГЕРАТ"</p>
-                <p class="second">охранная компания</p>
+            <div class="right">
+                <div class="top">
+                    <p class="first">ООО "СОБГЕРАТ"</p>
+                    <p class="second">охранная компания</p>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html" accesskey="0" title="">
+                                Главная
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html" accesskey="2" title="">Наши услуги</a>
+                        </li>
+                        <li>
+                            <a href="price.html" accesskey="3" title="">Цены</a>
+                        </li>
+                        <li>
+                            <a href="vacancy.html" accesskey="4" title="">Вакансии</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html" accesskey="5" title="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div id="menu">
-                <ul>
-                    <li>
-                        <a href="pages/about.html" accesskey="1" title="">О компании</a>
-                    </li>
-                    <li>
-                        <a href="pages/services.html" accesskey="2" title="">Наши услуги</a>
-                    </li>
-                    <li>
-                        <a href="pages/price.html" accesskey="3" title="">Цены</a>
-                    </li>
-                    <li>
-                        <a href="pages/vacancy.html" accesskey="4" title="">Вакансии</a>
-                    </li>
-                    <li>
-                        <a href="pages/contacts.html" accesskey="5" title="">Контакты</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        </header>
         <!-- header -->
-        <div id="container">
+        <div class="container">
 
             <div id="photo_content">
                 <ul id="images">
-                    <li><img src="images/6.jpg" width="300" height="150" alt="photo_one"></li>
+                    <li><img src="images/5.jpg" width="300" height="150" alt="photo_one"></li>
                     <li><img src="images/2.jpg" width="300" height="150" alt="photo_two"></li>
-                    <li><img src="images/3.jpg" width="300" height="150" alt="photo_three"></li>
-                    <li><img src="images/5.jpg" width="300" height="150" alt="photo_four"></li>
-                    <li><img src="images/4.jpg" width="300" height="150" alt="photo_five"></li>
+                    <li><img src="images/4.jpg" width="300" height="150" alt="photo_three"></li>
+                    <li><img src="images/6.jpg" width="300" height="150" alt="photo_four"></li>
+                    <li><img src="images/3.jpg" width="300" height="150" alt="photo_five"></li>
                 </ul>
             </div>
 
-            <div id="content">
+            <div class="content">
 
                 <p class="propose">Мы предлагаем:</p>
                 <p class="ptext">Физическая охрана объектов.</p>
@@ -61,6 +67,14 @@
                 <p class="ptext">Системы видео наблюдения.</p>
                 <p class="ptext">Охрана массовых мероприятий.</p>
             </div>
+            <div class="content">
+
+                <p class="propose">О компании:</p>
+                <p class="ptext2">Частная охранная фирма "ГЕРАТ" основана офицерами запаса Вооруженных Сил и органов Внутренних дел.</p>
+                <p class="ptext2">Руководящий состав имеет опыт работы в охранных фирмах более 10 лет. Наши охранники проходят подготовку и имют дипломы на охранную деятельность. В наличии имеются (дипломированные инженер-техологи, машины сопровождения, собаки)</p>
+                <p class="ptext2">Обеспечиваем высокое качество услуг в сфере охраны, защиты и безопасности. </p>
+            </div>
+
 
             <div id="info">
                 <div id="license">
@@ -92,7 +106,7 @@
         $(document).ready(function() {
             $('#images').kwicks({
                 max: 300,
-                spacing: 2
+                spacing: 0
             });
             $('ul.sf-menu').sooperfish();
         });

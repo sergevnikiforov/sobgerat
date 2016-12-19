@@ -1,186 +1,67 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-
-/* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
+html {
+    font-size: 16px;
 }
 
 body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-
-/* CSS Document */
-
-html {}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Playfair Display SC', serif;
     background: white;
 }
 
-#wrap {
-    background: url(../images/wrap2.png) no-repeat 50% 0%;
-    width: 1060px;
-    margin: auto;
+.wrapper {
+    background: darkred;
+    width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-box-shadow: -1px 6px 12px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: -1px 6px 12px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: -1px 6px 12px 0px rgba(50, 50, 50, 0.75);
 }
 
-#header {
-    width: 1060px;
-    height: 360px;
-    clear: both;
+.header {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
 }
 
-#logo {
+.logo {
     width: 300px;
     height: 300px;
-    padding-bottom: 60px;
-    float: left;
 }
 
-#logo a {
+.logo a {
     text-decoration: none;
 }
 
-#top {
-    padding: 40px 160px 40px 10px;
-    width: 590px;
-    height: 180px;
-    float: left;
+.right {
+    width: 700px;
+    height: 300px;
+}
+
+.top {
+    width: 700px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .first {
     letter-spacing: 2px;
-    padding: 30px;
     text-align: center;
     text-decoration: none;
-    text-shadow: 0.3em 0.2em 0.3em black;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
     font-size: 38px;
     color: white;
 }
@@ -189,78 +70,85 @@ body {
     letter-spacing: 7px;
     text-align: right;
     text-decoration: none;
-    text-shadow: 0.2em 0.2em 0.3em black;
     text-indent: 15px;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
     font-size: 30px;
     color: white;
 }
 
-#menu {
-    width: 760px;
+.menu {
+    width: 700px;
     height: 100px;
-    font-family: "Times New Roman", Times, serif;
-    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#menu ul {
+.menu ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-#menu ul li {
+.menu ul li {}
+
+
+/* Эффект 2: 3D */
+
+nav a {
+    position: relative;
     display: inline-block;
-    padding: 0;
-    margin: 0;
-}
-
-#menu a:link {
-    display: block;
-    background: url(../images/knlink.png) no-repeat;
+    outline: none;
+    color: #fff;
     text-decoration: none;
-    text-align: center;
-    font-weight: normal;
-    font-size: 21px;
-    color: white;
-    font-family: "Times New Roman", Times, serif;
-    width: 135px;
-    height: 95px;
-    padding-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    font-size: 1.35em;
 }
 
-#menu a:visited {
-    font-size: 21px;
-    color: white;
-    background-image: url(../images/knlink.png);
+nav a:hover,
+nav a:focus {
+    outline: none;
 }
 
-#menu a:hover {
-    background-image: url(../images/knhov.png);
-    font-size: 21px;
-    color: white;
+.menu a {
+    padding: 0 0 10px;
 }
 
-#menu a:active {
-    font-size: 20px;
-    color: red;
-    background-image: url(../images/knact.png);
+.menu a::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 
-#menu a:focus {
-    font-size: 21px;
-    color: white;
-    background-image: url(../images/knact.png);
+.menu a:hover::after,
+.menu a:focus::after {
+    height: 5px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
 }
 
-#container {
-    width: 0px;
-    clear: both;
+.container {
+    background: darkred;
 }
 
 #photo_content {
-    width: 1060px;
+    background: azure;
+    width: 1000px;
     overflow: hidden;
     margin: 0 auto;
     padding: 0 auto;
@@ -268,6 +156,7 @@ body {
 }
 
 ul#images {
+    background: mediumvioletred;
     margin: 0 auto;
     padding: 0;
     list-style: none;
@@ -283,15 +172,20 @@ ul#images li {
     height: 150px;
 }
 
-#content {
-    margin: 5px auto;
-    width: 1050px;
+.content {
+    width: 100%;
+    height: auto;
+    background: white;
+}
+
+.content-block {
+    width: 45%;
     height: auto;
     background: white;
 }
 
 #info {
-    width: 1060px;
+    width: 1000px;
     height: 60px;
     clear: both;
 }
@@ -304,11 +198,9 @@ ul#images li {
 }
 
 #license p {
-    font-family: "Times New Roman", Times, serif;
     font-size: 22px;
     color: black;
     text-align: left;
-    font-weight: bold;
 }
 
 .red {
@@ -319,7 +211,6 @@ ul#images li {
 #slogan {
     width: 530px;
     height: 30px;
-    font-family: "Times New Roman", Times, serif;
     font-size: 18px;
     color: #C70000;
     float: right;
@@ -328,30 +219,27 @@ ul#images li {
 }
 
 .propose {
-    font-family: "Times New Roman", Times, serif;
+    background: darkred;
     font-size: 26px;
     color: #fff;
     letter-spacing: 1px;
     word-spacing: -1px;
-    font-weight: bold;
     text-align: center;
-    padding-top: 20px;
-    background-color: #C70000;
-    border-radius: 7px 7px 0px 0px;
-    -moz-border-radius: 7px 7px 0px 0px;
-    -webkit-border-radius: 7px 7px 0px 0px;
-    border: 0px solid #000000;
+    padding: 1% 0px;
 }
 
 .ptext {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 26px;
-    color: #C70000;
+    color: black;
     text-align: center;
-    line-height: 37px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    text-indent: 5px;
+    line-height: 1.2;
+    font-size: 1.2rem;
+}
+
+.ptext2 {
+    color: black;
+    text-indent: 5%;
+    font-size: 1.2rem;
+    line-height: 1.4;
 }
 
 table {
@@ -360,7 +248,6 @@ table {
     border: 0;
     width: 90%;
     margin: auto;
-    font-family: Georgia, serif;
     font-size: 20px;
     color: #911;
     text-align: center;
@@ -384,23 +271,17 @@ table th {
     clear: both;
 }
 
-#content img {
+.content img {
     float: right;
 }
 
 #footer {
     margin: auto;
-    width: 1060px;
-    font-family: "Times New Roman", Times, serif;
+    width: 1000px;
     font-size: 13px;
     color: #fff;
     text-align: center;
     letter-spacing: 2px;
     word-spacing: 4px;
     clear: both;
-    background: #C70000;
-    border-radius: 0px 0px 7px 7px;
-    -moz-border-radius: 0px 0px 7px 7px;
-    -webkit-border-radius: 0px 0px 7px 7px;
-    border: 0px solid #000000;
 }
