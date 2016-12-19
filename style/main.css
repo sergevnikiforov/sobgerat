@@ -1,0 +1,406 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* CSS Document */
+
+html {}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    background: white;
+}
+
+#wrap {
+    background: url(../images/wrap2.png) no-repeat 50% 0%;
+    width: 1060px;
+    margin: auto;
+}
+
+#header {
+    width: 1060px;
+    height: 360px;
+    clear: both;
+}
+
+#logo {
+    width: 300px;
+    height: 300px;
+    padding-bottom: 60px;
+    float: left;
+}
+
+#logo a {
+    text-decoration: none;
+}
+
+#top {
+    padding: 40px 160px 40px 10px;
+    width: 590px;
+    height: 180px;
+    float: left;
+}
+
+.first {
+    letter-spacing: 2px;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0.3em 0.2em 0.3em black;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 38px;
+    color: white;
+}
+
+.second {
+    letter-spacing: 7px;
+    text-align: right;
+    text-decoration: none;
+    text-shadow: 0.2em 0.2em 0.3em black;
+    text-indent: 15px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+
+#menu {
+    width: 760px;
+    height: 100px;
+    font-family: "Times New Roman", Times, serif;
+    float: right;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#menu a:link {
+    display: block;
+    background: url(../images/knlink.png) no-repeat;
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+    font-size: 21px;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    width: 135px;
+    height: 95px;
+    padding-top: 5px;
+}
+
+#menu a:visited {
+    font-size: 21px;
+    color: white;
+    background-image: url(../images/knlink.png);
+}
+
+#menu a:hover {
+    background-image: url(../images/knhov.png);
+    font-size: 21px;
+    color: white;
+}
+
+#menu a:active {
+    font-size: 20px;
+    color: red;
+    background-image: url(../images/knact.png);
+}
+
+#menu a:focus {
+    font-size: 21px;
+    color: white;
+    background-image: url(../images/knact.png);
+}
+
+#container {
+    width: 0px;
+    clear: both;
+}
+
+#photo_content {
+    width: 1060px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 auto;
+    clear: both;
+}
+
+ul#images {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+ul#images li {
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    float: left;
+    width: 200px;
+    height: 150px;
+}
+
+#content {
+    margin: 5px auto;
+    width: 1050px;
+    height: auto;
+    background: white;
+}
+
+#info {
+    width: 1060px;
+    height: 60px;
+    clear: both;
+}
+
+#license {
+    width: 430px;
+    height: 60px;
+    float: left;
+    padding-left: 100px;
+}
+
+#license p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 22px;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+}
+
+.red {
+    font-size: 12px;
+    color: #aaa;
+}
+
+#slogan {
+    width: 530px;
+    height: 30px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: #C70000;
+    float: right;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.propose {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+    color: #fff;
+    letter-spacing: 1px;
+    word-spacing: -1px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #C70000;
+    border-radius: 7px 7px 0px 0px;
+    -moz-border-radius: 7px 7px 0px 0px;
+    -webkit-border-radius: 7px 7px 0px 0px;
+    border: 0px solid #000000;
+}
+
+.ptext {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+    color: #C70000;
+    text-align: center;
+    line-height: 37px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-indent: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+    border: 0;
+    width: 90%;
+    margin: auto;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: #911;
+    text-align: center;
+    line-height: 22px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-indent: 5px;
+}
+
+table th,
+td {
+    padding: 10px 12px;
+}
+
+table th {
+    background: #900;
+    color: white;
+}
+
+#clear {
+    clear: both;
+}
+
+#content img {
+    float: right;
+}
+
+#footer {
+    margin: auto;
+    width: 1060px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    clear: both;
+    background: #C70000;
+    border-radius: 0px 0px 7px 7px;
+    -moz-border-radius: 0px 0px 7px 7px;
+    -webkit-border-radius: 0px 0px 7px 7px;
+    border: 0px solid #000000;
+}
